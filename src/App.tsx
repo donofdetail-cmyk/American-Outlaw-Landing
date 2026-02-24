@@ -37,7 +37,12 @@ export default function App() {
           {/* Logo Area */}
           <div className="flex items-center gap-3">
             <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center shrink-0">
-              <img src="/reno nv tow company.png" alt="American Outlaw Logo" className="w-full h-full object-contain filter brightness-0 invert drop-shadow-[0_0_15px_rgba(245,179,1,0.15)]" />
+              <div
+                className="w-full h-full bg-outlaw-accent drop-shadow-[0_0_15px_rgba(245,179,1,0.15)]"
+                style={{ WebkitMaskImage: 'url("/reno nv tow company.png")', WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat', WebkitMaskPosition: 'center' }}
+                aria-label="American Outlaw Logo"
+                role="img"
+              />
             </div>
           </div>
 
@@ -380,7 +385,12 @@ export default function App() {
             <div className="col-span-1 md:col-span-2">
               <div className="mb-8">
                 <div className="w-48 h-48 flex items-center shrink-0">
-                  <img src="/reno nv tow company.png" alt="American Outlaw Logo" className="w-full h-full object-contain filter brightness-0 invert drop-shadow-[0_0_15px_rgba(245,179,1,0.1)] opacity-80 hover:opacity-100 transition-all duration-500" />
+                  <div
+                    className="w-full h-full bg-outlaw-accent drop-shadow-[0_0_15px_rgba(245,179,1,0.1)] opacity-80 hover:opacity-100 transition-all duration-500"
+                    style={{ WebkitMaskImage: 'url("/reno nv tow company.png")', WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat', WebkitMaskPosition: 'left center' }}
+                    aria-label="American Outlaw Logo"
+                    role="img"
+                  />
                 </div>
               </div>
               <p className="max-w-sm mb-8 text-gray-400 font-light leading-relaxed">
