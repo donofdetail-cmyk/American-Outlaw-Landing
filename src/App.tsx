@@ -69,9 +69,14 @@ export default function App() {
       {/* Hero Section (Split Layout) */}
       <section className="relative bg-[#050505] pt-16 pb-48 lg:pt-32 lg:pb-64 overflow-hidden">
         {/* Mobile Background Image */}
-        <div className="absolute inset-0 lg:hidden z-0 pointer-events-none">
-          <div className="absolute inset-0 bg-[url('/hero-tow.png')] bg-cover bg-right bg-no-repeat opacity-30 mix-blend-luminosity"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-black/60"></div>
+        <div className="absolute inset-0 lg:hidden z-0 pointer-events-none overflow-hidden">
+          {/* Base Image */}
+          <div className="absolute inset-0 bg-[url('/hero-tow.png')] bg-cover bg-center bg-no-repeat opacity-40 grayscale-[30%]"></div>
+          {/* Subtle Blur & Dimming Overlay */}
+          <div className="absolute inset-0 bg-[#050505]/40 backdrop-blur-[2px]"></div>
+          {/* Vignette Gradients for Text Legibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-transparent to-transparent"></div>
         </div>
 
         {/* Subtle background texture & Premium Glows */}
