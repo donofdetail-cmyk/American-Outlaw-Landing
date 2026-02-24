@@ -38,7 +38,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center shrink-0">
               <div
-                className="w-full h-full bg-outlaw-accent drop-shadow-[0_0_15px_rgba(245,179,1,0.15)]"
+                className="w-full h-full bg-white drop-shadow-[0_0_15px_rgba(255,255,255,0.15)]"
                 style={{ WebkitMaskImage: 'url("/reno nv tow company.png")', WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat', WebkitMaskPosition: 'center' }}
                 aria-label="American Outlaw Logo"
                 role="img"
@@ -68,9 +68,15 @@ export default function App() {
 
       {/* Hero Section (Split Layout) */}
       <section className="relative bg-[#050505] pt-16 pb-48 lg:pt-32 lg:pb-64 overflow-hidden">
+        {/* Mobile Background Image */}
+        <div className="absolute inset-0 lg:hidden z-0 pointer-events-none">
+          <div className="absolute inset-0 bg-[url('/hero-tow.png')] bg-cover bg-right bg-no-repeat opacity-30 mix-blend-luminosity"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-black/60"></div>
+        </div>
+
         {/* Subtle background texture & Premium Glows */}
-        <div className="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-black/80 to-transparent z-0"></div>
+        <div className="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-black/80 to-transparent z-0 pointer-events-none"></div>
         <div className="absolute -top-40 -left-40 w-[800px] h-[800px] bg-outlaw-accent/10 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -386,7 +392,7 @@ export default function App() {
               <div className="mb-8">
                 <div className="w-48 h-48 flex items-center shrink-0">
                   <div
-                    className="w-full h-full bg-outlaw-accent drop-shadow-[0_0_15px_rgba(245,179,1,0.1)] opacity-80 hover:opacity-100 transition-all duration-500"
+                    className="w-full h-full bg-white drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] opacity-80 hover:opacity-100 transition-all duration-500"
                     style={{ WebkitMaskImage: 'url("/reno nv tow company.png")', WebkitMaskSize: 'contain', WebkitMaskRepeat: 'no-repeat', WebkitMaskPosition: 'left center' }}
                     aria-label="American Outlaw Logo"
                     role="img"
