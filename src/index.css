@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-outlaw-bg: #1A1A1A;
-  --color-outlaw-text: #EFEFEF;
-  --color-outlaw-accent: #CC5500;
-  --color-outlaw-accent-hover: #b34a00;
-  --color-outlaw-gold: #D4AF37;
+  --color-outlaw-bg: #0B0C10; /* Deep Asphalt */
+  --color-outlaw-text: #F3F4F6;
+  --color-outlaw-accent: #F5B301; /* Safety Yellow */
+  --color-outlaw-accent-hover: #E53935; /* Emergency Red */
+  --color-outlaw-gold: #FFD700;
   
   --font-heading: 'Oswald', sans-serif;
   --font-body: 'Inter', sans-serif;
