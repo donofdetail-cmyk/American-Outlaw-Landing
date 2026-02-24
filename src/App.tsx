@@ -260,8 +260,9 @@ export default function App() {
               </div>
 
               <div className="p-8 lg:p-10 flex-grow flex flex-col relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-outlaw-accent to-orange-500 rounded-2xl flex items-center justify-center mb-10 shadow-[0_0_20px_rgba(204,85,0,0.4)] group-hover:scale-110 transition-transform duration-500">
-                  <Truck className="w-8 h-8 text-white" strokeWidth={2.5} />
+                <div className="w-20 h-20 rounded-3xl overflow-hidden mb-8 shadow-[0_0_20px_rgba(245,179,1,0.2)] group-hover:scale-110 transition-transform duration-500 border border-white/10 bg-black flex items-center justify-center p-1 relative group-hover:shadow-[0_0_30px_rgba(245,179,1,0.4)]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent z-10 pointer-events-none"></div>
+                  <img src="/winter-ops-icon.png" alt="Winter Ops" className="w-full h-full object-cover rounded-2xl relative z-0" />
                 </div>
 
                 <h3 className="text-2xl font-heading text-white mb-4 tracking-wide uppercase group-hover:text-outlaw-accent transition-colors">The Pass & Winter Ops</h3>
@@ -284,8 +285,9 @@ export default function App() {
               </div>
 
               <div className="p-8 lg:p-10 flex-grow flex flex-col relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-outlaw-accent to-orange-500 rounded-2xl flex items-center justify-center mb-10 shadow-[0_0_20px_rgba(204,85,0,0.4)] group-hover:scale-110 transition-transform duration-500">
-                  <MapPin className="w-8 h-8 text-white" strokeWidth={2.5} />
+                <div className="w-20 h-20 rounded-3xl overflow-hidden mb-8 shadow-[0_0_20px_rgba(245,179,1,0.2)] group-hover:scale-110 transition-transform duration-500 border border-white/10 bg-black flex items-center justify-center p-1 relative group-hover:shadow-[0_0_30px_rgba(245,179,1,0.4)]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent z-10 pointer-events-none"></div>
+                  <img src="/desert-highway-icon.png" alt="Desert Highway" className="w-full h-full object-cover rounded-2xl relative z-0" />
                 </div>
 
                 <h3 className="text-2xl font-heading text-white mb-4 tracking-wide uppercase group-hover:text-outlaw-accent transition-colors">Desert & Highway</h3>
@@ -308,8 +310,9 @@ export default function App() {
               </div>
 
               <div className="p-8 lg:p-10 flex-grow flex flex-col relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-outlaw-accent to-orange-500 rounded-2xl flex items-center justify-center mb-10 shadow-[0_0_20px_rgba(204,85,0,0.4)] group-hover:scale-110 transition-transform duration-500">
-                  <Wrench className="w-8 h-8 text-white" strokeWidth={2.5} />
+                <div className="w-20 h-20 rounded-3xl overflow-hidden mb-8 shadow-[0_0_20px_rgba(245,179,1,0.2)] group-hover:scale-110 transition-transform duration-500 border border-white/10 bg-black flex items-center justify-center p-1 relative group-hover:shadow-[0_0_30px_rgba(245,179,1,0.4)]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent z-10 pointer-events-none"></div>
+                  <img src="/off-road-icon.png" alt="Off-Road" className="w-full h-full object-cover rounded-2xl relative z-0" />
                 </div>
 
                 <h3 className="text-2xl font-heading text-white mb-4 tracking-wide uppercase group-hover:text-outlaw-accent transition-colors">Off-Road & Specialty</h3>
